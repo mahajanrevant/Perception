@@ -1,12 +1,17 @@
-## Project: Perception Pick & Place
+[//]: # (Image References)
+[pr2_robot]:./Pictures/simulation.png
 
+
+# Project: Perception Pick & Place
 ---
 
-# Goals and requirements of the project:
+![pr2 robot][pr2_robot]
+
+## Goals and requirements of the project:
 The project focuses on 3D perception and object recognition with the aid of an RGB-D camera mounted on a PR2 robot. The end goal is to recognize all the objects present in front of the robot on a table in different scenarios with a minimum predetermined accuracy as mentioned further below. The trained model is tested in three scenarios- world_1, world_2, world_3. Three main parts of the implemented pipeline are- Point Cloud filtering, segmentation and object recognition .All of these tasks are explained in detail below.
 
 
-# Contents
+## Contents
 
 
 * Filtering
@@ -16,7 +21,7 @@ The project focuses on 3D perception and object recognition with the aid of an R
 * Improvements
 ---
 
-# Filtering
+## Filtering
 ---
 
 This step of the pipeline concerns itself with the cleaning and proper formatting of the input data to feed as output to the next step of the pipeline. The steps performed are as follows:-
@@ -29,12 +34,12 @@ This step of the pipeline concerns itself with the cleaning and proper formattin
 
 * __RANSAC Plane Segmentation__ - Random Sample Consensus (RANSAC) is used to identify points in the dataset that belong to a particular model. It assumes that all of the data in a dataset is composed of both inliers and outliers, where inliers can be defined by a particular model with a specific set of parameters, and outliers don't. The particular model in this case is the top plane of the table. A max distance of 0.01 is used to get the outliers and inliers. In this case, the outliers are the objects and the inlier is the top plane of the table.
 
-# Clustering
+## Clustering
 ---
 
 * __DBSCAN(Density-based spatial cluster of applications with noise)__ - The DBSCAN algorithm creates clusters by grouping data points that are within some threshold distance from the nearest other point in the data. The decision of whether to place a point in a particular cluster is based upon the “Euclidean distance” between that point and other cluster members. The XYZRGB point cloud data was converted to XYZ and DBSCAN algorithm was applied with a cluster_tolerance of 0.05, min_cluster_size of 30 and max_cluster_size of 3000. The min_cluster size is set small in order to incorporate for the segmentation of glue in world_3 which has very few voxel leafs.
 
-# Object Recognition
+## Object Recognition
 ---
 
 The object recognition code allows each object within the object cluster to be identified. In order to do this, the system first needs to train a model to learn what each object looks like. Once it has this model, the system will be able to make predictions as to which object it sees.
@@ -43,12 +48,12 @@ The object recognition code allows each object within the object cluster to be i
 
 * __Training Model__ - A SVM classifier with a linear kernel for scikit-learn is used to make predictions. Before training the input data is scaled. A 5 fold cross validation is performed as well to remove bias and to check models accuracy on unseen data. The model is stored as model.sav. The model gives an accuracy of 93.6%. The following confusion matrices are generated:-
 
-# Simulation
+## Simulation
 ---
 
 The performance of the model is checked in 3 different scenarios.
 
-# Improvements
+## Improvements
 ---
 
 The model is unable to distinguish between soap and soap2 sometimes. More training data should be generated to improve those results. Also the pick and place instruction should be given to the pr2 as well to drop all the objects in determined boxes.
