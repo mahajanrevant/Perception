@@ -90,7 +90,7 @@ The performance of the model is checked in 3 different scenarios.
 
 ### World 1: Accuracy 3/3
 
-![scene_1][scene_1]
+![scene_1][./Pictures/scene_1.png]
 
 ### World 2: Accuracy 5/5
 
