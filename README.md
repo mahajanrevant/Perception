@@ -3,6 +3,11 @@
 [Voxel_Downsampling]:./Pictures/Voxel_Downsampling.png
 [orignal_table]:./Pictures/orignal_table.png
 [Pass_Through]:./Pictures/Pass_Through.png
+[Inlier]:./Pictures/Inlier.png
+[Outlier]:./Pictures/Outlier.png
+[cluster]:./Pictures/cluster.png
+
+
 # Project: Perception Pick & Place
 ---
 
@@ -40,10 +45,17 @@ This step of the pipeline concerns itself with the cleaning and proper formattin
 
 * __RANSAC Plane Segmentation__ - Random Sample Consensus (RANSAC) is used to identify points in the dataset that belong to a particular model. It assumes that all of the data in a dataset is composed of both inliers and outliers, where inliers can be defined by a particular model with a specific set of parameters, and outliers don't. The particular model in this case is the top plane of the table. A max distance of 0.01 is used to get the outliers and inliers. In this case, the outliers are the objects and the inlier is the top plane of the table.
 
+![Inlier][Inlier]
+
+![Outlier][Outlier]
+
+
 ## Clustering
 
 
 * __DBSCAN(Density-based spatial cluster of applications with noise)__ - The DBSCAN algorithm creates clusters by grouping data points that are within some threshold distance from the nearest other point in the data. The decision of whether to place a point in a particular cluster is based upon the “Euclidean distance” between that point and other cluster members. The XYZRGB point cloud data was converted to XYZ and DBSCAN algorithm was applied with a cluster_tolerance of 0.05, min_cluster_size of 30 and max_cluster_size of 3000. The min_cluster size is set small in order to incorporate for the segmentation of glue in world_3 which has very few voxel leafs.
+
+![cluster][cluster]
 
 ## Object Recognition
 
