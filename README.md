@@ -25,8 +25,8 @@ The project focuses on 3D perception and object recognition with the aid of an R
 ## Contents
 
 
-* [Filtering](## Filtering)
-* [Clustering](## Clustering)
+* Filtering
+* Clustering
 * Object Recognition
 * Simulation
 * Improvements
