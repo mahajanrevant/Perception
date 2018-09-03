@@ -9,6 +9,9 @@
 [world_1]:./Pictures/world_1.png
 [world_2]:./Pictures/world_2.png
 [world_3]:./Pictures/world_3.png
+[world1]:./Pictures/world1.png
+[world2]:./Pictures/world2.png
+[world3]:./Pictures/world3.png
 
 # Project: Perception Pick & Place
 ---
@@ -68,15 +71,15 @@ The object recognition code allows each object within the object cluster to be i
 
 * __Training Model__ - A SVM classifier with a linear kernel for scikit-learn is used to make predictions. Before training the input data is scaled. A 5 fold cross validation is performed as well to remove bias and to check models accuracy on unseen data. The model is stored as model.sav. The model gives an accuracy of 93.6%. The following confusion matrices are generated:-
 
-###                                                           World 1
+### World 1:
 
 ![world_1][world_1]
 
-### World 2
+### World 2:
 
 ![world_2][world_2]
 
-### World 3
+### World 3:
 
 ![world_3][world_3]
 
@@ -84,6 +87,18 @@ The object recognition code allows each object within the object cluster to be i
 
 
 The performance of the model is checked in 3 different scenarios.
+
+### World 1: Accuracy 3/3
+
+![world1][world1]
+
+### World 2: Accuracy 5/5
+
+![world2][world2]
+
+### World 3: Accuracy 8/8
+
+![world3][world3]
 
 ## Improvements
 
