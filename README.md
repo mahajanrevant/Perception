@@ -98,6 +98,8 @@ The performance of the model is checked in 3 different scenarios.
 
 ![scene_3](https://github.com/mahajanrevant/Perception/blob/master/Pictures/scene_3.PNG)
 
+The output .yaml files for the above world scenes are in the [Output](https://github.com/mahajanrevant/Perception/tree/master/Output) folder
+
 ## Improvements
 
 
