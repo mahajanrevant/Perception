@@ -88,7 +88,7 @@ The performance of the model is checked in 3 different scenarios.
 
 ### World 1: Accuracy 3/3
 
-![scene_1](https://github.com/mahajanrevant/Perception/blob/master/Pictures/scene_1.PNG)
+![scene_1](https://github.com/mahajanrevant/Perception/blob/master/Pictures/scene_1.PNG "World 1")
 
 ### World 2: Accuracy 5/5
 
