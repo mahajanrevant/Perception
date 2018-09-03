@@ -1,7 +1,8 @@
 [//]: # (Image References)
 [pr2_robot]:./Pictures/simulation.png
 [Voxel_Downsampling]:./Pictures/Voxel_Downsampling.png
-
+[orignal_table]:./Pictures/orignal_table.png
+[Pass_Through]:./Pictures/Pass_Through.png
 # Project: Perception Pick & Place
 ---
 
@@ -23,8 +24,9 @@ The project focuses on 3D perception and object recognition with the aid of an R
 
 ## Filtering
 
+![orignal_table][orignal_table]
 
-This step of the pipeline concerns itself with the cleaning and proper formatting of the input data to feed as output to the next step of the pipeline. The steps performed are as follows:-
+This step of the pipeline concerns itself with the cleaning and proper formatting of the input data(the above picture) to feed as output to the next step of the pipeline. The steps performed are as follows:-
 
 * __Outlier Removal Filter__ - Every sensor has a certain noise element to it, called outliers. These outliers can be internal or external to the sensor. Such outliers lead to complications in the estimation of point cloud characteristics like curvature, gradients, etc. leading to erroneous values, which in turn might cause failures at various stages in our perception pipeline. An statistical outlier filter with a mean of 8 and a threshold of 0.3 is used to get rid of the outliers.
 
@@ -33,6 +35,8 @@ This step of the pipeline concerns itself with the cleaning and proper formattin
 ![Voxel_Downsampling][Voxel_Downsampling]
 
 * __Pass Through Filter__ - All the objects of interest are placed on a table and the table is a static object itself. The region of interest is known and so a pass through filer is used to just extract table and the object from the input image. A filter along the z axis with a minimum values of 0.6 and a maximum value of 1.1 is used to get extract the objects and table. Another filter along the x axis with a minimum values of 0.3 and a maximum value of 0,6 is used to get rid of the collection bins from the region of interest.
+
+![Pass_Through][Pass_Through]
 
 * __RANSAC Plane Segmentation__ - Random Sample Consensus (RANSAC) is used to identify points in the dataset that belong to a particular model. It assumes that all of the data in a dataset is composed of both inliers and outliers, where inliers can be defined by a particular model with a specific set of parameters, and outliers don't. The particular model in this case is the top plane of the table. A max distance of 0.01 is used to get the outliers and inliers. In this case, the outliers are the objects and the inlier is the top plane of the table.
 
