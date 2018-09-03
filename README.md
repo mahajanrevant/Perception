@@ -68,7 +68,7 @@ The object recognition code allows each object within the object cluster to be i
 
 * __Training Model__ - A SVM classifier with a linear kernel for scikit-learn is used to make predictions. Before training the input data is scaled. A 5 fold cross validation is performed as well to remove bias and to check models accuracy on unseen data. The model is stored as model.sav. The model gives an accuracy of 93.6%. The following confusion matrices are generated:-
 
-                                             ### World 1
+###                                                           World 1
 
 ![world_1][world_1]
 
