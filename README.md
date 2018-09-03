@@ -101,6 +101,8 @@ The performance of the model is checked in 3 different scenarios.
 ## Improvements
 
 
-The model is unable to distinguish between soap and soap2 sometimes. More training data should be generated to improve those results. Also the pick and place instruction should be given to the pr2 as well to drop all the objects in determined boxes.
+* The model is unable to distinguish between soap and soap2 sometimes. More training data should be generated to improve these results.
+* Confusion Matrix can be improved with training on larger dataset
+* Also the pick and place instruction should be given to the PR2 as well to drop all the objects in determined boxes.
 
 ---
