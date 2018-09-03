@@ -1,114 +1,114 @@
 object_list:
 - arm_name: right
-  object_name: 'data: '''''
+  object_name: biscuits
   pick_pose:
     orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
+      w: 0
+      x: 0
+      y: 0
+      z: 0
     position:
-      x: 0.571990430355072
-      y: -0.24882584810256958
-      z: 0.7059223651885986
+      x: 0.5712839961051941
+      y: -0.24777169525623322
+      z: 0.705381453037262
   place_pose:
     orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
+      w: 0
+      x: 0
+      y: 0
+      z: 0
     position:
       x: 0
       y: -0.71
+      z: 0.605
+  test_scene_num: 2
+- arm_name: left
+  object_name: book
+  pick_pose:
+    orientation:
+      w: 0
+      x: 0
+      y: 0
+      z: 0
+    position:
+      x: 0.5785447955131531
+      y: 0.2809555232524872
+      z: 0.7233589291572571
+  place_pose:
+    orientation:
+      w: 0
+      x: 0
+      y: 0
+      z: 0
+    position:
+      x: 0
+      y: 0.71
       z: 0.605
   test_scene_num: 2
 - arm_name: right
-  object_name: 'data: '''''
+  object_name: soap
   pick_pose:
     orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
+      w: 0
+      x: 0
+      y: 0
+      z: 0
     position:
-      x: 0.5611062049865723
-      y: 0.0037836958654224873
-      z: 0.6756804585456848
+      x: 0.5601335763931274
+      y: 0.0030915304087102413
+      z: 0.6766786575317383
   place_pose:
     orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
+      w: 0
+      x: 0
+      y: 0
+      z: 0
     position:
       x: 0
       y: -0.71
       z: 0.605
   test_scene_num: 2
 - arm_name: left
-  object_name: 'data: '''''
+  object_name: soap2
   pick_pose:
     orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
+      w: 0
+      x: 0
+      y: 0
+      z: 0
     position:
-      x: 0.5803124308586121
-      y: 0.27956727147102356
-      z: 0.7232120633125305
+      x: 0.44463634490966797
+      y: 0.22637921571731567
+      z: 0.6763724684715271
   place_pose:
     orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
+      w: 0
+      x: 0
+      y: 0
+      z: 0
     position:
       x: 0
       y: 0.71
       z: 0.605
   test_scene_num: 2
 - arm_name: left
-  object_name: 'data: '''''
+  object_name: glue
   pick_pose:
     orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
-    position:
-      x: 0.4449370205402374
-      y: 0.22704246640205383
-      z: 0.6768372058868408
-  place_pose:
-    orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
-    position:
+      w: 0
       x: 0
-      y: 0.71
-      z: 0.605
-  test_scene_num: 2
-- arm_name: left
-  object_name: 'data: '''''
-  pick_pose:
-    orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
+      y: 0
+      z: 0
     position:
-      x: 0.631523609161377
-      y: 0.13066250085830688
-      z: 0.6792171001434326
+      x: 0.6312534213066101
+      y: 0.13052795827388763
+      z: 0.6787508726119995
   place_pose:
     orientation:
-      w: 0.0
-      x: 0.0
-      y: 0.0
-      z: 0.0
+      w: 0
+      x: 0
+      y: 0
+      z: 0
     position:
       x: 0
       y: 0.71
