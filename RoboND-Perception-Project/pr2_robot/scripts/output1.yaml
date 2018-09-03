@@ -1,0 +1,51 @@
+object_list:
+- arm_name: right
+  object_name: &id001 !!python/object/new:std_msgs.msg._String.String
+    state:
+    - *id001
+  pick_pose:
+    orientation:
+      w: 0.0
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    position:
+      x: 0.5423651933670044
+      y: -0.24245065450668335
+      z: 0.7058065533638
+  place_pose:
+    orientation:
+      w: 0.0
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    position:
+      x: 0
+      y: -0.71
+      z: 0.605
+  test_scene_num: 1
+- arm_name: left
+  object_name: &id002 !!python/object/new:std_msgs.msg._String.String
+    state:
+    - *id002
+  pick_pose:
+    orientation:
+      w: 0.0
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    position:
+      x: 0.5432066321372986
+      y: -0.019029434770345688
+      z: 0.6746159195899963
+  place_pose:
+    orientation:
+      w: 0.0
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    position:
+      x: 0
+      y: 0.71
+      z: 0.605
+  test_scene_num: 1
