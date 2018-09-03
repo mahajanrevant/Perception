@@ -6,7 +6,9 @@
 [Inlier]:./Pictures/Inlier.png
 [Outlier]:./Pictures/Outlier.png
 [cluster]:./Pictures/cluster.png
-
+[world_1]:./Pictures/world_1.png
+[world_2]:./Pictures/world_2.png
+[world_3]:./Pictures/world_3.png
 
 # Project: Perception Pick & Place
 ---
@@ -65,6 +67,18 @@ The object recognition code allows each object within the object cluster to be i
 * __Capture Object Features__ - Color Histograms in HSV format along with normal histograms are used to extract features. This particular approach is used as the training objects and the test objects have the same shape and colors. The goal is to get the model used to the traing features as much as possible. This approach would be considered really bad as training and test objects have various difference in the real world. The code for building the histograms is in features.py. The capture_features_pr2.py script saves the object features to a file named training_set_pr2.sav. Data for each object in 100 random orientations was collected using the HSV color space and 32 bins when creating the image histograms.
 
 * __Training Model__ - A SVM classifier with a linear kernel for scikit-learn is used to make predictions. Before training the input data is scaled. A 5 fold cross validation is performed as well to remove bias and to check models accuracy on unseen data. The model is stored as model.sav. The model gives an accuracy of 93.6%. The following confusion matrices are generated:-
+
+### World 1
+
+![world_1][world_1]
+
+### World 2
+
+![world_2][world_2]
+
+### World 3
+
+![world_3][world_3]
 
 ## Simulation
 
