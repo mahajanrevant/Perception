@@ -9,9 +9,9 @@
 [world_1]:./Pictures/world_1.png
 [world_2]:./Pictures/world_2.png
 [world_3]:./Pictures/world_3.png
-[world1]:./Pictures/world1.png
-[world2]:./Pictures/world2.png
-[world3]:./Pictures/world3.png
+[worlds1]:./Pictures/world1.png
+[worlds2]:./Pictures/world2.png
+[worlds3]:./Pictures/world3.png
 
 # Project: Perception Pick & Place
 ---
@@ -90,15 +90,15 @@ The performance of the model is checked in 3 different scenarios.
 
 ### World 1: Accuracy 3/3
 
-![world1][world1]
+![world1][worlds1]
 
 ### World 2: Accuracy 5/5
 
-![world2][world2]
+![world2][worlds2]
 
 ### World 3: Accuracy 8/8
 
-![world3][world3]
+![world3][worlds3]
 
 ## Improvements
 
