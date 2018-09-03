@@ -9,9 +9,7 @@
 [world_1]:./Pictures/world_1.png
 [world_2]:./Pictures/world_2.png
 [world_3]:./Pictures/world_3.png
-[scene_1]:./Pictures/scene_1.png
-[scene_2]:./Pictures/scene_2.png
-[scene_3]:./Pictures/scene_3.png
+
 
 # Project: Perception Pick & Place
 ---
@@ -90,7 +88,7 @@ The performance of the model is checked in 3 different scenarios.
 
 ### World 1: Accuracy 3/3
 
-![scene_1][./Pictures/scene_1.png]
+![scene_1][https://github.com/mahajanrevant/Perception/blob/master/Pictures/scene_1.PNG]
 
 ### World 2: Accuracy 5/5
 
