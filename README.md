@@ -5,10 +5,9 @@
 # Goals and requirements of the project:
 The project focuses on 3D perception and object recognition with the aid of an RGB-D camera mounted on a PR2 robot. The end goal is to recognize all the objects present in front of the robot on a table in different scenarios with a minimum predetermined accuracy as mentioned further below. The trained model is tested in three scenarios- world_1, world_2, world_3. Three main parts of the implemented pipeline are- Point Cloud filtering, segmentation and object recognition .All of these tasks are explained in detail below.
 
-===
 
 # Contents
----
+========
 
 * Filtering
 * Clustering
